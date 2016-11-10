@@ -95,7 +95,7 @@ $(document).ready(function () {
     }
     /*-----------------ajax----------*/
     function loadJson() {
-        var jqxhr = $.getJSON("json/portJson.json", function (json) {
+        var jqxhr = $.getJSON("json/portjson.json", function (json) {
             var port = json.port;
             var hash = window.location.hash;
             hash = hash.split('#')[1];

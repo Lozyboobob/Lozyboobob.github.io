@@ -66,7 +66,7 @@
             "name": "MINIUS"
             , "publish": "yes"
             , "download": "no"
-            , "img": ["images/port/minius/1.jpeg", "images/port/minius/2.jpeg", "images/port/minius/3.jpeg", "images/port/minius/4.jpeg", "images/port/minius/5.png"]
+            , "img": ["images/port/minius/1.jpeg", "images/port/minius/2.jpeg", "images/port/minius/3.jpeg", "images/port/minius/4.jpeg", "images/port/minius/5.jpeg"]
             , "description": "   is software for long-distance couples that allows them to spend time together in virtual scenes. In MiniUs, couples will have their virtual character, own house, anniversary calendar, album, distance map, and whether station for each location. By monitoring lovely reaction and mood in real life like hug, kiss, touch head, happy, angry etc., MiniUs provides couples a warm home.Beside the concept of reaction and romantic between couple, MiniUs allows couples feed a virtual pet together and integrates a blog system, which make MiniUs differ from other couple software and increase customer stickiness."
             , "tech": ""
             , "work": ["PM"]

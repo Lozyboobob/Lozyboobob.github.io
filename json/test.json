@@ -1,0 +1,69 @@
+{
+"port": [
+{  "name": "PLIIZZ", 
+            "download": "no", 
+            "publish": "yes", 
+            "img": ["images/port/pliizz/1.png", "images/port/pliizz/2.png", "images/port/pliizz/3.png", "images/port/pliizz/4.png","images/port/pliizz/5.png", "images/port/pliizz/6.png", "images/port/pliizz/7.png","images/port/pliizz/8.png", "images/port/pliizz/10.png", "images/port/pliizz/11.png"], 
+            "description": "  is a web APP for people to command house services like repairing sink, finding a leak, fixing the switch etc. from local craftsmen. People can command an immediate intervention from craftsman or make a RDV with them. People just simply choose the service wanted, and the command will be sent to all of the craftsmen with such skill, once a craftsman accept the command, trade begins. To qualify the request, PLIIZZ offers an estimate and check the availability of their craftsmen, their teams will send an email notification to the client once the command is accepted, client can just have to accept and see approach of his provider.", "tech": ["Ionic", "Angular JS", "REST", "SASS"], "work": ["Front-end", "API"], "type": "Web App" },
+{  "name": "TOPCLASS"
+            , "publish": "no"
+            , "download": "no"
+            , "img": ["images/port/pliizz/1.png", "images/port/pliizz/2.png", "images/port/pliizz/3.png", "images/port/pliizz/4.png", "images/port/pliizz/5.png", "images/port/pliizz/6.png", "images/port/pliizz/7.png", "images/port/pliizz/8.png", "images/port/pliizz/10.png", "images/port/pliizz/11.png"]
+            , "description": "  TopClass is a learning and reviewing website for students. Students can find course they would like to learn in database, acquire knowledge question by question, cart by cart, or in a quiz. And they can also create their own course database to record their questions for reviewing. TopClass also provide the result statistic for quiz, so that user can know there learning progress easily.The website is separated into 4 parts：Part for introducing the TopClass Company;Part for registering and modifying user’s information;Part for going through questions;Part for questions database;"
+            , "tech": ["JQuery", "Bootstrap", "char.js", "3d.js", "SASS"]
+            , "work": ["Front-end"]
+            , "type": "Web" },
+{  "name": "COLLECT'EAT"
+            , "publish": "yes"
+            , "download": "no"
+            , "img": ["images/port/pliizz/1.png", "images/port/pliizz/2.png", "images/port/pliizz/3.png", "images/port/pliizz/4.png", "images/port/pliizz/5.png", "images/port/pliizz/6.png", "images/port/pliizz/7.png", "images/port/pliizz/8.png", "images/port/pliizz/10.png", "images/port/pliizz/11.png"]
+            , "description": "  Collect'Eat is an online order platform between consumers and restaurateurs. At Collect'Eat people can discover the best restaurants 5 minutes away where they stand, and from which they can order their favorite dishes with reduction. People can set the time when they want to retrieve the dishes in advance, so Collect’Eat can save time that wasting in ordering dishes and waiting for dishes.For the restaurant owner, Collect’Eat provides restaurant a powerful back office including:Establish online page and create online menu;Manage orderings;Review statistic;"
+            , "tech": ["JQuery", "Bootstrap", "highchart.js", "SASS"]
+            , "work": ["Front-end"]
+            , "type": "Web" },
+    {   "name": "MONCAPITAL"
+            , "publish": "no"
+            , "download": "no"
+            , "img": ["images/port/pliizz/1.png", "images/port/pliizz/2.png", "images/port/pliizz/3.png", "images/port/pliizz/4.png", "images/port/pliizz/5.png", "images/port/pliizz/6.png", "images/port/pliizz/7.png", "images/port/pliizz/8.png", "images/port/pliizz/10.png", "images/port/pliizz/11.png"]
+            , "description": "  Collect'Eat is an online order platform between consumers and restaurateurs. At Collect'Eat people can discover the best restaurants 5 minutes away where they stand, and from which they can order their favorite dishes with reduction. People can set the time when they want to retrieve the dishes in advance, so Collect’Eat can save time that wasting in ordering dishes and waiting for dishes.For the restaurant owner, Collect’Eat provides restaurant a powerful back office including:Establish online page and create online menu;Manage orderings;Review statistic;"
+            , "tech": ["JQuery", "Bootstrap", "chart.js", "SASS"]
+            , "work": ["Front-end"]
+            , "type": "Web" },
+    {   "name": "MY3D"
+            , "publish": "yes"
+            , "download": "yes"
+            , "img": ["images/port/pliizz/1.png", "images/port/pliizz/2.png", "images/port/pliizz/3.png", "images/port/pliizz/4.png", "images/port/pliizz/5.png", "images/port/pliizz/6.png", "images/port/pliizz/7.png", "images/port/pliizz/8.png", "images/port/pliizz/10.png", "images/port/pliizz/11.png"]
+            , "description": "  Collect'Eat is an online order platform between consumers and restaurateurs. At Collect'Eat people can discover the best restaurants 5 minutes away where they stand, and from which they can order their favorite dishes with reduction. People can set the time when they want to retrieve the dishes in advance, so Collect’Eat can save time that wasting in ordering dishes and waiting for dishes.For the restaurant owner, Collect’Eat provides restaurant a powerful back office including:Establish online page and create online menu;Manage orderings;Review statistic;"
+            , "tech": ["Android"]
+            , "work": ["UX/UI","PM"]
+            , "type": "Mobile App" },
+    {   "name": "CLOTHESON"
+            , "publish": "yes"
+            , "download": "yes"
+            , "img": ["images/port/pliizz/1.png", "images/port/pliizz/2.png", "images/port/pliizz/3.png", "images/port/pliizz/4.png", "images/port/pliizz/5.png", "images/port/pliizz/6.png", "images/port/pliizz/7.png", "images/port/pliizz/8.png", "images/port/pliizz/10.png", "images/port/pliizz/11.png"]
+            , "description": "  Collect'Eat is an online order platform between consumers and restaurateurs. At Collect'Eat people can discover the best restaurants 5 minutes away where they stand, and from which they can order their favorite dishes with reduction. People can set the time when they want to retrieve the dishes in advance, so Collect’Eat can save time that wasting in ordering dishes and waiting for dishes.For the restaurant owner, Collect’Eat provides restaurant a powerful back office including:Establish online page and create online menu;Manage orderings;Review statistic;"
+            , "tech": ["OpenCV", "C++", "Qt"]
+            , "work": ["Developer"]
+            , "type": "Software" },
+    {
+            "name": "MINIUS"
+            , "publish": "yes"
+            , "download": "yes"
+            , "img": ["images/port/pliizz/1.png", "images/port/pliizz/2.png", "images/port/pliizz/3.png", "images/port/pliizz/4.png", "images/port/pliizz/5.png", "images/port/pliizz/6.png", "images/port/pliizz/7.png", "images/port/pliizz/8.png", "images/port/pliizz/10.png", "images/port/pliizz/11.png"]
+            , "description": "  Collect'Eat is an online order platform between consumers and restaurateurs. At Collect'Eat people can discover the best restaurants 5 minutes away where they stand, and from which they can order their favorite dishes with reduction. People can set the time when they want to retrieve the dishes in advance, so Collect’Eat can save time that wasting in ordering dishes and waiting for dishes.For the restaurant owner, Collect’Eat provides restaurant a powerful back office including:Establish online page and create online menu;Manage orderings;Review statistic;"
+            , "tech": ""
+            , "work": ["PM"]
+            , "type": "Mobile App"
+    },
+     {
+            "name": "MEISHIKE"
+            , "publish": "yes"
+            , "download": "yes"
+            , "img": ["images/port/pliizz/1.png", "images/port/pliizz/2.png", "images/port/pliizz/3.png", "images/port/pliizz/4.png", "images/port/pliizz/5.png", "images/port/pliizz/6.png", "images/port/pliizz/7.png", "images/port/pliizz/8.png", "images/port/pliizz/10.png", "images/port/pliizz/11.png"]
+            , "description": "  Collect'Eat is an online order platform between consumers and restaurateurs. At Collect'Eat people can discover the best restaurants 5 minutes away where they stand, and from which they can order their favorite dishes with reduction. People can set the time when they want to retrieve the dishes in advance, so Collect’Eat can save time that wasting in ordering dishes and waiting for dishes.For the restaurant owner, Collect’Eat provides restaurant a powerful back office including:Establish online page and create online menu;Manage orderings;Review statistic;"
+            , "tech": ""
+            , "work": ["UI/UX"]
+            , "type": "web/app"
+    }
+]
+}

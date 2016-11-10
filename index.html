@@ -2,217 +2,209 @@
 <html>
 
 <head>
-
-    <?php include ('php/common-include.php'); ?>
-        <script src="js/home.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.3.min.js"></script>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="stylesheets/frameStylesheet.css" rel="stylesheet">
+    <script src="js/index.js"></script>
 </head>
 
-<body>
-
-    <div class="header">
-        <div class="container hidden-xs">
-            <img src="images/Logo-04.svg" class="logo">
-            <div class="header-btns">
-                <button type="button" class="btn blue " id="connection-btn">connexion</button>
-                <button type="button" class="btn blue" id="inscription-btn">inscription</button>
-                <button type="button" class="btn grey-frame " id="restaurateur-btn">JE SUIS RESTAURATEUR</button>
-                <div class="shopping-car btn">
-                    <img src="images/20160808_Collecteat-07.svg" id="shopping-car-btn">
-                    <p>180€</p>
-                </div>
-                <button type="button" class="btn" id="lang-btn">FR</button>
-
-            </div>
-        </div>
-        <div class="container visible-xs">
-            <div class="row">
-                <img src="images/Logo-04.svg" class="logo">
-                <div class="line-1-btns">
-                    <div class="shopping-car">
-                        <img src="images/20160808_Collecteat-07.svg" id="shopping-car-btn">
-                        <p>180€</p>
-                    </div>
-                    <button type="button" class="btn" id="lang-btn">FR</button>
-                </div>
-
-            </div>
-            <div class="row line-2-btns center-block">
-                <button type="button" class="btn blue no-border" id="connection-btn">connexion</button>
-                <button type="button" class="btn blue no-border" id="inscription-btn">inscription</button>
-                <button type="button" class="btn grey-frame " id="restaurateur-btn">JE SUIS RESTAURATEUR</button>
-            </div>
-        </div>
-    </div>
-    <div class="content-home-page">
-        <div class="home-page-banner">
-            <div class="banner" id="banner1">
-                <div class="banner-content">
-                    <p class="white lg bold">VOS PLATS PRÉFÉRÉS, À EMPORTER</p>
-                    <div class="nor-wrap">
-                        <p class="white">Commandez votre plat à prix réduit dans l’un de vos restaurants de quartier et venez le retirer à l’heure choisie</p>
-                    </div>
-                    <div class="input-frame">
-                        <input type="text" placeholder="Entrez votre adresse">
-                        <button type="button" class="btn blue-bkg visible-xs">TROUVER</button>
-                        <button type="button" class="btn blue-bkg hidden-xs">TROUVER LES RESTAURANTS</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container" id="comment-ca-marche-block">
-            <p class="title lg">COMMENT ÇA MARCHE ?</p>
-            <div class="row margin-top-md">
-                <div class="col-xs-4 ">
-                    <img src="images/20160808_Collecteat-28.svg" width="50%" class="center-block">
-
-                </div>
-                <div class="col-xs-4 ">
-                    <img src="images/20160808_Collecteat-29.svg" width="60%" class="center-block">
-
-                </div>
-                <div class="col-xs-4 ">
-                    <img src="images/20160808_Collecteat-30.svg" width="50%" class="center-block">
-
-                </div>
-            </div>
-            <div class="row margin-bottom-md">
-                <div class="col-xs-4 ">
-
-                    <p class="gal-item">Commandez votre repas à emporter à prix réduit</p>
-                </div>
-                <div class="col-xs-4 ">
-
-                    <p class="gal-item">Allez chercher votre commande à l’heure choisie</p>
-                </div>
-                <div class="col-xs-4 ">
-
-                    <p class="gal-item"> Régalez-vous !</p>
-                </div>
-            </div>
-        </div>
+<body onresize="resize()">
+    <div class="psnweb-header"> <img src="images/main/logo.gif" height="50" class="logo center-block">
         <div class="container">
-            <p class="title lg">POURQUOI COLLECT’EAT C’EST MIEUX ?</p>
-        </div>
-        <div class="light-grey">
-            <div class="container">
-                <div class="nor-wrap  margin-lg">
-                    <p class="title ex-md">DU CHOIX OU QUE VOUS SOYEZ</p>
-                    <p class="center">Votre quartier regroupe de nombreux restaurants aussi divers que variés. Collect’Eat vous permet d’aller récupérer vos plats quelque soit l’endroit où vous êtes</p>
-                </div>
-            </div>
-        </div>
-        <div class="">
-            <div class="container">
-                <div class="nor-wrap  margin-lg">
-                    <p class="title ex-md">LA QUALITÉ A MOINDRE COÛT</p>
-                    <p class="center">Chez Collect’Eat nous ne plaisantons pas avec la qualité! Nos restaurants partenaires sont sélectionnés avec amour pour leur cuisine savoureuse, proposée avec une réduction minimum de 10%</p>
-                    <img src="images/20160808_Collecteat-02.svg" class="center-block" width="90">
-                </div>
-            </div>
-        </div>
-        <div class="mid-grey">
-            <div class="container">
-                <div class="nor-wrap  margin-lg">
-                    <p class="title ex-md">GAGNEZ DU TEMPS</p>
-                    <p class="center">Vous n’attendrez plus 20 minutes à la caisse ou une heure votre livreur...</p>
-                </div>
-            </div>
-        </div>
-        <div class="white">
-            <div class="container">
-                <p class="title lg">À TOUTE HEURE DE LA JOURNÉE</p>
-                <div class="row " id="toute-heure">
-                    <div class="hor-line lg"></div>
-                    <img src="images/20160808_Collecteat-31.png" class="center-block heure">
-
-                    <img src="images/20160808_Collecteat-32.png" class="center-block heure">
-
-                    <img src="images/20160808_Collecteat-33.png" class="center-block heure">
-
-                </div>
-
-                <div class="row heure-txt">
-                    <div class="col-xs-4">
-
-                        <p class=" sm">En route pour le bureau...</p>
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                        <a class="navbar-brand" href="#"></a>
                     </div>
-                    <div class="col-xs-4 ">
-
-                        <p class=" sm">A la pause dej’...</p>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li><a href="#psnweb-info-block">About Me</a></li>
+                            <li><a href="portfolios.html#pliizz" id='toPortfolio' class="jumpPort">Portfolio</a></li>
+                            <li><a href="effect.html">Effect Trick</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Contact</a></li>
+                        </ul>
                     </div>
-                    <div class="col-xs-4 ">
-
-                        <p class=" sm">En rentrant à la maison...</p>
-                    </div>
+                    <!-- /.navbar-collapse -->
                 </div>
-            </div>
+                <!-- /.container-fluid -->
+            </nav>
         </div>
-        <div class="blue" id="ce-sont-aime">
-            <div class="container">
-                <p class="title lg white">CE QU’ILS ONT AIMÉ</p>
-                <div class="icon-list">
-                    <img src="images/Logo_Facebook.svg" width="10">
-                    <img src="images/Logo_twitter.svg" width="20">
-                    <img src="images/Logo_instagram.svg" width="20">
-                </div>
-                <div class="row">
-                    <div class="col-sm-3 col-xs-6 ">
-                        <p class="center white sm quote">
-                            Quod cum ita sit, paucae domus studiorum seriis cultibus antea celebratae !</p>
-                        <p class="right sm">#BLABLABLA</p>
-                    </div>
-                    <div class="col-sm-3 col-xs-6 ">
-                        <p class="center white sm quote">
-                            Quod cum ita sit, paucae domus studiorum seriis cultibus antea celebratae !</p>
-                        <p class="right sm">#BLABLABLA</p>
-                    </div>
-                    <div class="col-sm-3 col-xs-6 ">
-                        <p class="center white sm quote">
-                            Quod cum ita sit, paucae domus studiorum seriis cultibus antea celebratae !</p>
-                        <p class="right sm">#BLABLABLA</p>
-                    </div>
-                    <div class="col-sm-3 col-xs-6 ">
-                        <p class="center white sm quote">
-                            Quod cum ita sit, paucae domus studiorum seriis cultibus antea celebratae !</p>
-                        <p class="right sm">#BLABLABLA</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="white">
-            <div class="container">
-                <p class="title lg">NOTRE SÉLÉCTION
-                    <br><span class="blue">MINUTIEUSE </span>DE RESTAURANTS</p>
-                <img src="images/Screen%20Shot%202016-08-09%20at%2016.06.00.png" class="center-block margin-bottom-md" width="100%">
-            </div>
-        </div>
-        <div class="banner" id="banner2">
-            <div class="banner-content">
-                <p class="white lg bold">COMMANDEZ EN <span class="blue">GROUPE</span> GRÂCE À COLLECT’EAT</p>
-                <p class="white">Fini les complications au moment du partage de l’addition!</p>
-            </div>
-        </div>
-        <div class="white" id="bon-plan">
-            <div class="container">
-                <div class="nor-wrap margin-lg">
-                    <p class="center light ex-md">POUR PROFITER DES <span class="blue">BONS PLANS</span> COLLECT’<span class="bold">EAT</span>, C’EST PAR ICI !</p>
-                    <div class="input-box row">
-                        <div class="col-sm-3 col-xs-4">
-                            <input type="text" placeholder="Code postal" class="italy sm  frame-input">
+    </div>
+    <!-- <div class="container visible-xs"> 
+        </div>-->
+    <div class="psnweb-content">
+        <div id="psnweb-info-frame">
+            <div id="psnweb-info-block ">
+                <div class="container">
+                    <div class="psnweb-info-content">
+                        <div class="sm-area center-block margin-top-lg margin-bottom-md">
+                            <p class="center blue ex-lg light">Hello! <span class="white"> Salut</span></p>
+                            <p class="center ex-md light">I love designing, and to define a software or a web is an amazing process. To design the functions and running process perfectly combines logic and aesthetics.</p>
                         </div>
-                        <div class="col-sm-6 col-xs-8 no-padding">
-                            <input type="text" placeholder="E-mail" class="italy sm  frame-input">
+                        <button class="btn btn-lg blue-bkg center-block light">Download Resume</button>
+                    </div> <img src="images/main/photo-bkg.jpg" class="hor-center psnweb-my-photo"> </div>
+            </div>
+        </div>
+        <div id="psnweb-port-home-frame" class="container">
+            <div class="psnweb-block-title">
+                <div class="line"></div>
+                <div class=" psnweb-title ">PORTFOLIO</div>
+            </div>
+            <div class="margin-lg  psnweb-home-ports-frame">
+                <div class="row margin-md psnweb-home-ports">
+                    <a href="portfolios.html#pliizz" id="toPliizz" class="jumpPort ">
+                        <div class="col-lg-2 col-sm-3 col-xs-6  port center-block ">
+                            <div class="flip-container " ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper center-block">
+                                    <div class="front"> <img src='images/main/V1-1_10.png' class="center-block " width="90%" onclick="openPliizz()"> </div>
+                                    <div class="back"> <img src='images/main/V1_03.png' class="center-block " width="90%" onclick="openPliizz()"> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="label">web App</div>
                         </div>
-                        <div class="col-sm-3 col-xs-12 fuc-btn">
-                            <button class="btn blue-bkg center-block">JE M’INSCRIS</button>
+                    </a>
+                    <a href="portfolios.html#collecteat" id='toCollecteat' class="jumpPort">
+                        <div class="col-lg-2 col-sm-3 col-xs-6 port center-block"> <div class="flip-container " ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper center-block">
+                                    <div class="front"> <img src='images/main/V1-1_03.png' class="center-block " width="90%" onclick="openPliizz()"> </div>
+                                    <div class="back"> <img src='images/main/V1_05.png' class="center-block " width="90%" onclick="openPliizz()"> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="label">web</div>
                         </div>
-                    </div>
-
+                    </a>
+                    <a href="portfolios.html#topclass" id='toTopclass' class="jumpPort">
+                        <div class="col-lg-2 col-sm-3 col-xs-6 port center-block"> <div class="flip-container " ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper center-block">
+                                    <div class="front"> <img src='images/main/V1-1_05.png' class="center-block " width="90%" onclick="openPliizz()"> </div>
+                                    <div class="back"> <img src='images/main/V1_07.png' class="center-block " width="90%" onclick="openPliizz()"> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="label">web</div>
+                        </div>
+                    </a>
+                    <a href="portfolios.html#moncapital" id='toMoncapital' class="jumpPort">
+                        <div class="col-lg-2 col-sm-3 col-xs-6 port center-block"> <div class="flip-container " ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper center-block">
+                                    <div class="front"> <img src='images/main/V1-1_07.png' class="center-block " width="90%" onclick="openPliizz()"> </div>
+                                    <div class="back"> <img src='images/main/V1_09.png' class="center-block " width="90%" onclick="openPliizz()"> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="label">web</div>
+                        </div>
+                    </a>
+                    <a href="portfolios.html#my3d" id='toMy3d' class="jumpPort">
+                        <div class="col-lg-2 col-sm-3 col-xs-6 port center-block"><div class="flip-container " ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper center-block">
+                                    <div class="front"> <img src='images/main/V1-1_18.png' class="center-block " width="90%" onclick="openPliizz()"> </div>
+                                    <div class="back"> <img src='images/main/V1_15.png' class="center-block " width="90%" onclick="openPliizz()"> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="label">UI/UX PM</div>
+                        </div>
+                    </a>
+                    <a href="portfolios.html#minius" id='toMinius' class="jumpPort">
+                        <div class="col-lg-2 col-sm-3 col-xs-6 port center-block"> <div class="flip-container " ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper center-block">
+                                    <div class="front"> <img src='images/main/V1-1_20.png' class="center-block " width="90%" onclick="openPliizz()"> </div>
+                                    <div class="back"> <img src='images/main/V1_16.png' class="center-block " width="90%" onclick="openPliizz()"> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="label">PM</div>
+                        </div>
+                    </a>
+                    <a href="portfolios.html#clotheson" id='toClotheson' class="jumpPort">
+                        <div class="col-lg-2 col-sm-3 col-xs-6 port center-block"><div class="flip-container " ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper center-block">
+                                    <div class="front"> <img src='images/main/V1-1_16.png' class="center-block " width="90%" onclick="openPliizz()"> </div>
+                                    <div class="back"> <img src='images/main/V1_17.png' class="center-block " width="90%" onclick="openPliizz()"> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="label">Software</div>
+                        </div>
+                    </a>
+                    <a href="portfolios.html#meishike" id='toMeishike' class="jumpPort">
+                        <div class="col-lg-2 col-sm-3 col-xs-6 port center-block"> <div class="flip-container " ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper center-block">
+                                    <div class="front"> <img src='images/main/V1-1_17.png' class="center-block " width="90%" onclick="openPliizz()"> </div>
+                                    <div class="back"> <img src='images/main/V1_18.png' class="center-block " width="90%" onclick="openPliizz()"> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="label">UI/UX</div>
+                        </div>
+                    </a>
                 </div>
+            </div>
+        </div>
+        <!--  <div class="banner  container-fluid" id="inscription-banner">
+            <div class="container" id="inscription-container">
+                <div class="col-xs-12 col-sm-6" id="inscription-left">
+                    <div>
+                        <p class="no-margin-bottom lg bold white " style="text-align:left">INSCRIVEZ VOUS</p>
+                        <p class="no-margin-bottom ex-md bold white" style="text-align:left">POUR TRAVAILLER EN PARTENARIAT AVEC COLLECT’EAT</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 " id="inscription-part">
+                    <form class="inspcription-block">
+                        <p class="blue center ex-md">INSCRIPTION</p>
+                        <label>Nom de l’établissement</label>
+                        <br>
+                        <input type="text" class=" margin-bottom-sm form-control">
+                        <label>Prénom & nom de responsable*</label>
+                        <br>
+                        <input type="text" class="form-control">
+                        <p style="text-align:left" class="sm blue margin-bottom-sm">vos coordonnées restent confidentielles</p>
+                        <label>Adresse de l’établissement</label>
+                        <br>
+                        <input type="text" class="margin-bottom-sm form-control" placeholder="N° de voie / CP / ville">
+                        <label>Téléphone fixe (facultatif)</label>
+                        <br>
+                        <input type="text" class="input-sm margin-bottom-sm form-control">
+                        <label>Téléphone mobile</label>
+                        <input type="text" class="input-sm margin-bottom-sm form-control" placeholder="+ 33 (0) 6">
+                        <label>E-mail</label>
+                        <br>
+                        <input type="text" class=" margin-bottom-sm form-control" placeholder="+ 33 (0) 6">
+                        <label>Disposez-vous d’un TPV relié à internet ?</label>
+                        <br>
+                        <button type="button" class="btn grey-frame margin-bottom-sm" style="height:30px">Oui</button>
+                        <button type="button" class="btn grey-frame margin-bottom-sm" style="height:30px">Non</button>
+                        <br>
+                        <label>Comment avez-vous entendu parler de Collect’eat ?</label>
+                        <br>
+                        <select class="grey margin-bottom-sm form-control" style="width:70%">
+                            <option>Choisir</option>
+                        </select>
+                        <input type="checkbox" name="inscrip-cb" id="inscrip-cb" class="margin-bottom-sm">
+                        <label for="inscrip-cb" style="margin-left:10px" class="margin-bottom-sm sm">J’accèpte les <a class="blue decoration">conditions générales d’utilisation</a></label>
+                        <button type="button" class="btn blue-bkg center-block" id="inscription-btn">DEVENIR RESTAURATEUR PARTENAIRE</button>
+                    </form>
+                </div>
+            </div>
+        </div>--></div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <li>Designed and developed by Xinyu LIU. Copyright ©2016 lozyboobob.github.io. All Rights Reserved.</li>
             </div>
         </div>
     </div>
-   <?php include ('php/footer.php'); ?>
 </body>
 
 </html>

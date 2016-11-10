@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.3.min.js"></script>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="stylesheets/frameStylesheet.css" rel="stylesheet">
+    <script src='js/portfolios.js'></script>
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="owl.carousel/owl-carousel/owl.carousel.css">
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="owl.carousel/owl-carousel/owl.theme.css">
+    <!-- Include js plugin -->
+    <script src="owl.carousel/owl-carousel/owl.carousel.js"></script>
+</head>
+
+<body onresize="resize()">
+    <div class="psnweb-header" style="padding-top:0px;">
+        <div class="container">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                        <a class="navbar-brand" href="#"></a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li><a href="index.html">About Me</a></li>
+                            <li><a href="portfolios.html#pliizz">Portfolio</a></li>
+                            <li><a href="effect.html">Effect Trick</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+    </div>
+    <!-- <div class="container visible-xs"> 
+        </div>-->
+    <div class="psnweb-content" style="padding-top:50px;">
+        
+            <!-----for small screen---->
+   
+            <div class="container">
+                <div class="toggle-show-left "></div>
+                <div class="toggle-left ">
+                    <div class="margin-top-lg">
+                        <div class="list-group">
+                            <a href="#pliizz" class="list-group-item toPliizz active" ><span class="badge">WebApp Dev</span>Pliizz<div></div></a>
+                            <a href="#collecteat" class="list-group-item toCollecteat" ><span class="badge">Web Dev</span>Collect'Eat<div></div></a> 
+                            <a href="#minius" class="list-group-item toMinius"><span class="badge">PM</span>MiniUs<div></div></a>
+                            <a href="#topclass" class="list-group-item toTopclass" id=''><span class="badge">Web Dev</span>TopClass<div></div></a> 
+                            <a href="#moncapital" class="list-group-item toMoncapital" id=''><span class="badge">Web Dev</span>Moncapital<div></div></a>
+                            <a href="#my3d" class="list-group-item toMy3d" id=''><span class="badge">UI/UX</span>My3D<div></div></a> 
+                            <a href="#clotheson" class="list-group-item toClotheson" id=''><span class="badge">Dev</span>Clotheson<div></div></a> 
+                            <a href="#meishike" class="list-group-item toMeishike" id=""><span class="badge">UI/UX</span>Meishike</a> <div></div></div>
+                    </div>
+                </div>
+                <div class="toggle-right-content">
+                        
+                    <div class="psnweb-block-title">
+                        <div class="line"></div>
+                        <div class=" psnweb-title "></div>
+                    </div>
+                    <div class="row" >
+                        <div class=" owl-demo owl-carousel owl-theme center-block"> </div>
+                        <div class="customNavigation"> <a class="btn prev">Previous</a> <a class="btn next">Next</a> <a class="btn play">Autoplay</a> <a class="btn stop">Stop</a> </div>
+                    </div>
+                    <div >
+                        <p class="not-publish">Ooop! This project has not been published yet
+                            <br>In order to protect the business secrets of the owner, it won't be presented here. Sorry!</p>
+                        <p class="port-intro"><span class='port-name'></span> </p>
+                    </div>
+                    <div class=" margin-bottom-exlg port-labels"><span class="label round-label green sm port-type"></span></div>
+                </div>
+            </div>
+            <!-----End for small screen---->
+            <!-----for normal screen---->
+           <!-- <div class="visible-md-block visible-lg-block container">
+                <div class="left-nav">
+                    <div class="margin-top-lg">
+                         <div class="list-group">
+                            <a href="#pliizz" class="list-group-item toPliizz active" ><span class="badge">WebApp Dev</span>Pliizz<div></div></a>
+                            <a href="#collecteat" class="list-group-item toCollecteat" ><span class="badge">Web Dev</span>Collect'Eat</a> 
+                            <a href="portfolios.html?name=minius" class="list-group-item toMinius"><span class="badge">PM</span>MiniUs</a>
+                            <a href="portfolios.html?name=topclass" class="list-group-item toTopclass" id=''><span class="badge">Web Dev</span>TopClass</a> 
+                            <a href="portfolios.html?name=moncapital" class="list-group-item toMoncapital" id=''><span class="badge">Web Dev</span>Moncapital</a>
+                            <a href="portfolios.html?name=my3d" class="list-group-item toMy3d" id=''><span class="badge">UI/UX</span>My3D</a> 
+                            <a href="portfolios.html?name=clotheson" class="list-group-item toClotheson" id=''><span class="badge">Dev</span>Clotheson</a> 
+                            <a href="portfolios.html?name=meishike" class="list-group-item toMeishike" id=""><span class="badge">UI/UX</span>Meishike</a> </div>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <div class="psnweb-block-title">
+                        <div class="line"></div>
+                        <div class=" psnweb-title "></div>
+                    </div>
+                    <div class="row">
+                        <div class="owl-demo owl-carousel owl-theme center-block"> </div>
+                        <div class="customNavigation"> <a class="btn prev">Previous</a> <a class="btn next">Next</a> <a class="btn play">Autoplay</a> <a class="btn stop">Stop</a> </div>
+                    </div>
+                    <div class="row">
+                        <p class="not-publish center">Ooop! This project has not been published yet
+                            <br>In order to protect the business secrets of the owner, it won't be presented here. Sorry!</p>
+                        <p class="port-intro"><span class='port-name'></span> </p>
+                    </div>
+                    <div class="row margin-bottom-exlg port-labels"><span class="label round-label green sm port-type"></span></div>
+                </div>
+            </div>-->
+            <!-----END for normal screen---->
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <li>Designed and developed by Xinyu LIU. Copyright ©2016 lozyboobob.github.io. All Rights Reserved.</li>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

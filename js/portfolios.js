@@ -30,7 +30,6 @@ function showToggle() {
 
 function resize() {
     if ($(window).width() >= 992) {
-        console.log('become big');
         if ($('.toggle-left').is(':visible')) {
             hideToggle();
         }
@@ -42,7 +41,6 @@ function resize() {
 $(document).ready(function () {
     $(".toggle-show-left").click(function () {
         if ($(window).width() < 992) {
-            console.log('here');
             if ($('.toggle-left').is(':visible')) {
                 hideToggle();
             }
@@ -97,11 +95,10 @@ $(document).ready(function () {
     }
     /*-----------------ajax----------*/
     function loadJson() {
-        var jqxhr = $.getJSON("json/test.json", function (json) {
+        var jqxhr = $.getJSON("json/portJson.json", function (json) {
             var port = json.port;
             var hash = window.location.hash;
             hash = hash.split('#')[1];
-            console.log(hash);
             switch (hash) {
             case "pliizz":
                 {
@@ -152,42 +149,55 @@ $(document).ready(function () {
             while (picN > 0) {
                 removePic();
             }
-            if (port.publish == "yes") {
-                //for img slider
-                //get img
-                for (var i = 0; i < port.img.length; i++) {
-                    var html = '<div class="item"><img src=' + port.img[i] + ' ' + 'width="100%"></div>';
-                    addPic(html);
-                }
-                //for website
-                if (port.name == "collecteat") {
-                    owl.data('owlCarousel').reinit({
-                        items: 3, //10 items above 1000px browser width
-                        itemsDesktop: [1000, 2], //5 items between 1000px and 901px
-                        itemsDesktopSmall: [900, 2], // betweem 900px and 601px
-                        itemsTablet: [600, 1], //2 items between 600 and 0
-                        itemsMobile: true // itemsMobile disabled - inherit from itemsTablet option
-                    });
-                }
-                else {
-                    //for mobile app
-                    owl.data('owlCarousel').reinit({
-                        items: 6, //10 items above 1000px browser width
-                        itemsDesktop: [1000, 4], //5 items between 1000px and 901px
-                        itemsDesktopSmall: [900, 3], // betweem 900px and 601px
-                        itemsTablet: [600, 2], //2 items between 600 and 0
-                        itemsMobile: true // itemsMobile disabled - inherit from itemsTablet option
-                    });
-                }
-                //get intro
-                introTxt = "<span class='blue'>" + port.name + "</span>" + port.description;
-                $('.not-publish').css("display", "none");
-                $('.customNavigation').css("display", "block");
+            if (port.download == "yes") {
+                var href = port.downloadurl;
+                $(".need-download").css("display", "block");
+                $(".need-download a").attr("href", href);
+                introTxt = "";
+                $('.customNavigation').css("display", "none");
+                 $('.not-publish').css("display", "none");
             }
             else {
-                introTxt = "";
-                $('.not-publish').css("display", "block");
-                $('.customNavigation').css("display", "none");
+                $(".need-download").css("display", "none");
+                
+                if (port.publish == "yes") {
+                    //for img slider
+                    //get img
+                    for (var i = 0; i < port.img.length; i++) {
+                        var html = '<div class="item"><img src=' + port.img[i] + ' ' + 'width="100%"></div>';
+                        addPic(html);
+                    }
+                    //for website
+                    if (hash == "collecteat") {
+                        console.log("reinit");
+                        owl.data('owlCarousel').reinit({
+                            items: 2, //10 items above 1000px browser width
+                            itemsDesktop: [1000, 1], //5 items between 1000px and 901px
+                            itemsDesktopSmall: [900, 1], // betweem 900px and 601px
+                            itemsTablet: [600, 1], //2 items between 600 and 0
+                            itemsMobile: true // itemsMobile disabled - inherit from itemsTablet option
+                        });
+                    }
+                    else {
+                        //for mobile app
+                        owl.data('owlCarousel').reinit({
+                            items: 6, //10 items above 1000px browser width
+                            itemsDesktop: [1000, 4], //5 items between 1000px and 901px
+                            itemsDesktopSmall: [900, 3], // betweem 900px and 601px
+                            itemsTablet: [600, 2], //2 items between 600 and 0
+                            itemsMobile: true // itemsMobile disabled - inherit from itemsTablet option
+                        });
+                    }
+                    //get intro
+                    introTxt = "<span class='blue'>" + port.name + "</span>" + port.description;
+                    $('.not-publish').css("display", "none");
+                    $('.customNavigation').css("display", "block");
+                }
+                else {
+                    introTxt = "";
+                    $('.not-publish').css("display", "block");
+                    $('.customNavigation').css("display", "none");
+                }
             }
             //set intro
             $('.port-intro').html(introTxt);

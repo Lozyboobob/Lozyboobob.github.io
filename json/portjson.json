@@ -5,7 +5,7 @@
             , "download": "no"
             , "publish": "yes"
             , "img": ["images/port/pliizz/1.png", "images/port/pliizz/2.png", "images/port/pliizz/3.png", "images/port/pliizz/4.png", "images/port/pliizz/5.png", "images/port/pliizz/6.png", "images/port/pliizz/7.png", "images/port/pliizz/8.png", "images/port/pliizz/10.png", "images/port/pliizz/11.png"]
-            , "description": "  is a web APP for people to command house services like repairing sink, finding a leak, fixing the switch etc. from local craftsmen. People can command an immediate intervention from craftsman or make a RDV with them. People just simply choose the service wanted, and the command will be sent to all of the craftsmen with such skill, once a craftsman accept the command, trade begins. To qualify the request, PLIIZZ offers an estimate and check the availability of their craftsmen, their teams will send an email notification to the client once the command is accepted, client can just have to accept and see approach of his provider."
+            , "description": "  is a web APP for people to command house services from local craftsmen, the services including repairing sink, finding a leak, fixing the switch etc. <br>People just simply choose the service wanted, and by commanding an immediate intervention or a RDV(appointment), the command will be sent to all of the craftsmen available with relevant skill. Once a craftsman accept the command, trade begins. After the work is finished, the client will rate for the craftsman, and payment flow into the craftman's account."
             , "tech": ["Ionic", "Angular JS", "REST", "SASS"]
             , "work": ["Front-end", "API"]
             , "type": "Web App"
@@ -25,7 +25,7 @@
             , "publish": "yes"
             , "download": "no"
             , "img": ["images/port/collect-eat/1.png", "images/port/collect-eat/2.png", "images/port/collect-eat/3.png"]
-            , "description": "   is an online order platform between consumers and restaurateurs. At Collect'Eat people can discover the best restaurants 5 minutes away where they stand, and from which they can order their favorite dishes with reduction. People can set the time when they want to retrieve the dishes in advance, so Collect’Eat can save time that wasting in ordering dishes and waiting for dishes.For the restaurant owner, Collect’Eat provides restaurant a powerful back office including:Establish online page and create online menu;Manage orderings;Review statistic;"
+            , "description": "   is an online ordering platform for consumers and restaurateurs. At Collect'Eat people can discover the best restaurants near them, and they can also order their favorite dishes with reduction. People can set the time when they want to retrieve the dishes in advance, so Collect’Eat can help people save time that wasting in ordering dishes and waiting for dishes. Moreover, for the restaurant owner, Collect’Eat provides restaurant a powerful back office including establish online page and create online menu, manage orderings, and review statistic"
             , "tech": ["JQuery", "Bootstrap", "highchart.js", "SASS"]
             , "work": ["Front-end"]
             , "type": "Web"
@@ -46,7 +46,7 @@
             , "download": "yes"
             , "downloadurl": "doc/my3d-en.pdf"
             , "img": ["images/port/pliizz/1.png", "images/port/pliizz/2.png", "images/port/pliizz/3.png", "images/port/pliizz/4.png", "images/port/pliizz/5.png", "images/port/pliizz/6.png", "images/port/pliizz/7.png", "images/port/pliizz/8.png", "images/port/pliizz/10.png", "images/port/pliizz/11.png"]
-            , "description": "  Collect'Eat is an online order platform between consumers and restaurateurs. At Collect'Eat people can discover the best restaurants 5 minutes away where they stand, and from which they can order their favorite dishes with reduction. People can set the time when they want to retrieve the dishes in advance, so Collect’Eat can save time that wasting in ordering dishes and waiting for dishes.For the restaurant owner, Collect’Eat provides restaurant a powerful back office including:Establish online page and create online menu;Manage orderings;Review statistic;"
+            , "description": "  "
             , "tech": ["Android"]
             , "work": ["UX/UI", "PM"]
             , "type": "Mobile App"
@@ -57,7 +57,7 @@
             , "download": "yes"
             , "downloadurl": "doc/clotheson-en.pdf"
             , "img": ["images/port/pliizz/1.png", "images/port/pliizz/2.png", "images/port/pliizz/3.png", "images/port/pliizz/4.png", "images/port/pliizz/5.png", "images/port/pliizz/6.png", "images/port/pliizz/7.png", "images/port/pliizz/8.png", "images/port/pliizz/10.png", "images/port/pliizz/11.png"]
-            , "description": "  Collect'Eat is an online order platform between consumers and restaurateurs. At Collect'Eat people can discover the best restaurants 5 minutes away where they stand, and from which they can order their favorite dishes with reduction. People can set the time when they want to retrieve the dishes in advance, so Collect’Eat can save time that wasting in ordering dishes and waiting for dishes.For the restaurant owner, Collect’Eat provides restaurant a powerful back office including:Establish online page and create online menu;Manage orderings;Review statistic;"
+            , "description": " "
             , "tech": ["OpenCV", "C++", "Qt"]
             , "work": ["Developer"]
             , "type": "Software"
@@ -67,7 +67,7 @@
             , "publish": "yes"
             , "download": "no"
             , "img": ["images/port/minius/1.jpeg", "images/port/minius/2.jpeg", "images/port/minius/3.jpeg", "images/port/minius/4.jpeg", "images/port/minius/5.jpeg"]
-            , "description": "   is software for long-distance couples that allows them to spend time together in virtual scenes. In MiniUs, couples will have their virtual character, own house, anniversary calendar, album, distance map, and whether station for each location. By monitoring lovely reaction and mood in real life like hug, kiss, touch head, happy, angry etc., MiniUs provides couples a warm home.Beside the concept of reaction and romantic between couple, MiniUs allows couples feed a virtual pet together and integrates a blog system, which make MiniUs differ from other couple software and increase customer stickiness."
+            , "description": "   is a software for long-distance couples and allows them to spend time together in virtual scenes. In MiniUs, couples will have their virtual character, own house, anniversary calendar, album, distance map, and whether station for each location. By monitoring lovely reaction and mood in real life like hug, kiss, touch head, happy, angry etc., MiniUs provides couples a warm home.Beside the intereaction and romance between couple, MiniUs allows couples feed a virtual pet together and integrates a blog system, which make MiniUs differ from other couple software and increase customer stickiness."
             , "tech": ""
             , "work": ["PM"]
             , "type": "Mobile App"
@@ -78,7 +78,7 @@
             , "download": "yes"
             , "downloadurl": "doc/meishike-en.pdf"
             , "img": ["images/port/pliizz/1.png", "images/port/pliizz/2.png", "images/port/pliizz/3.png", "images/port/pliizz/4.png", "images/port/pliizz/5.png", "images/port/pliizz/6.png", "images/port/pliizz/7.png", "images/port/pliizz/8.png", "images/port/pliizz/10.png", "images/port/pliizz/11.png"]
-            , "description": "  Collect'Eat is an online order platform between consumers and restaurateurs. At Collect'Eat people can discover the best restaurants 5 minutes away where they stand, and from which they can order their favorite dishes with reduction. People can set the time when they want to retrieve the dishes in advance, so Collect’Eat can save time that wasting in ordering dishes and waiting for dishes.For the restaurant owner, Collect’Eat provides restaurant a powerful back office including:Establish online page and create online menu;Manage orderings;Review statistic;"
+            , "description": "  "
             , "tech": ""
             , "work": ["UI/UX"]
             , "type": "web/app"
